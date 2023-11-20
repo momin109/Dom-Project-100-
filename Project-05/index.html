@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+
+<body>
+
+    <section class="contener ">
+        <h1 id="h1">what this is your name</h1>
+        <h1 id="h2">this is heading tag</h1>
+        <p>this is paragraph</p>
+    </section>
+    <section id='contener'>
+        <h1>ami amar kaz ke valo vasi</h1>
+        <p class="color">good idea, All the best</p>
+        <p class="color">good idea, All the best</p>
+        <p class="color">this is paragraph</p>
+        <p class="color">this is paragraph</p>
+        <p class="color">this is paragraph</p>
+    </section>
+
+
+    <section id="friends">
+
+        <ul>
+            <li>samamd</li>
+            <li>hamad</li>
+            <li>kamad</li>
+            <li>asif</li>
+        </ul>
+
+    </section>
+
+    <script>
+        // const sectionOne = document.querySelectorAll('.contener')
+        // console.log(sectionOne)
+
+        // const sectionOneheddingTag = document.querySelectorAll('#contener p')
+        // console.log(sectionOneheddingTag)
+        const someli = document.querySelectorAll('#friends li')
+
+        // HTMLcollection ke balla hoi livelike
+        //Nodelist ke bolla hoi statik
+
+        // for (const li of someli) {
+        //     console.log(li)
+        // }
+
+        const h1 = document.getElementById('h1').style.color = 'red'
+
+        document.getElementsByClassName('color')[2].style.color = 'red'
+
+        const sum = document.getElementsByClassName('color')
+
+        const hone = document.getElementById('h1')
+        hone.getAttribute('id')
+    </script>
+
+</body>
+
+</html>

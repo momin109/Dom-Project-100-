@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div>
+        <a name="thd">HTML Tutorial</a><br>
+        <a name="">CSS Tutorial</a><br>
+        <a name="">XML Tutorial</a><br>
+        <h1 id="demo">how are you</h1>
+        <p id="p">this is paragrap</p>
+        <p id="d2"></p>
+        <p id="d3"></p>
+        <p id="d4"></p>
+
+
+        <p id="d5"></p>
+
+
+
+        <script>
+            document.getElementById("demo").innerHTML = "Hello World ddd!" + document.anchors.length;
+
+            document.getElementById('d2').innerHTML = document.body.innerHTML;  // d2 and d3 same kaz kore
+
+            document.getElementById('d3').innerHTML = document.documentElement.innerHTML;
+
+            document.getElementById('d4').innerHTML = document.embeds.length
+
+            document.getElementById('d5').innerHTML = 'Date :' + Date();
+
+            document.write(Date())
+
+
+        </script>
+    </div>
+</body>
+
+</html>

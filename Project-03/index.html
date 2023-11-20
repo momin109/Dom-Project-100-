@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <h1>Dom Project</h1>
+    <p>this is dom</p>
+
+    <ul>
+        <li>samad</li>
+        <li>kamal</li>
+        <li>hamid</li>
+        <li>safir</li>
+        <li>dumon</li>
+    </ul>
+    <h1>this this h1 re</h1>
+
+    <script>
+        const liCollection = document.getElementsByTagName('li')
+
+        console.log(liCollection)
+
+        for (const li of liCollection) {
+            console.log(li.innerText)
+        }
+
+        const h1collection = document.getElementsByTagName('h1')
+
+        document.getElementsByTagName('li')[0].innerHTML = 'tor bap name ki'
+
+        for (const h1 of h1collection) {
+            console.log(h1)
+
+        }
+
+        document.getElementsByTagName('li')[3].innerHTML = 'what this is '
+
+
+
+
+    </script>
+
+</body>
+
+</html>
