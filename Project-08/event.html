@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1 title="this is heading tooltip" onclick="console.log('heading tag click')">this is event page</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusantium eos officia fugiat at labore
+            </p>
+
+            <button title="this is tooltip" onclick="console.log('this is home page')">click me</button>
+            <!--obtion 1. direcly set on the html  -->
+            <button onclick="document.body.style.backgroundColor='green'">chenge backgroundColor</button>
+
+            <button onclick="makeYellow()">make yello</button>
+
+            <button id="make-blue">makeBlue</button>
+            <button id="purple">purple</button>
+            <button id="make-pink">make pink</button>
+            <button id="make-red">make red</button>
+            <button id="goldenrod">make goldenrod</button>
+        </section>
+
+
+        <section>
+            <h1 id="h1">header tag is a big tag</h1>
+            <button id="chenge">text chenge</button>
+            <p id="p1">this is paragraph tag</p>
+            <button onclick="paragraph()">paragraph</button>
+        </section>
+    </main>
+
+
+    <script>
+
+        document.getElementById('chenge').addEventListener('click', function () {
+            const h1 = document.getElementById('h1')
+            h1.style.backgroundColor = 'yellow';
+            h1.innerText = 'What is your name';
+            h1.style.border = 'solid 2px red'
+
+        })
+        function paragraph() {
+            const p1 = document.getElementById('p1')
+
+            p1.style.backgroundColor = 'yellow';
+            p1.innerHTML = 'my friend is ruhul amin'
+            p1.style.border = 'solid 2px red'
+        }
+
+
+
+
+    </script>
+
+
+    <script src="./event.js"></script>
+</body>
+
+</html>

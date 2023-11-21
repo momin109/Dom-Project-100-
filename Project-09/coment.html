@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section id="conteiner">
+        <h1 id="defult-text">defult text</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cum, aut debitis hic eligendi unde eius
+            inventore consequuntur praesentium voluptate nesciunt doloribus provident molestias aperiam necessitatibus
+            non et maiores repellendus.</p>
+
+        <textarea name="" id="textarea" cols="60" rows="10"></textarea>
+        <br>
+
+    </section>
+    <button id="post-comment">post comment</button>
+
+    <script>
+        document.getElementById('post-comment').addEventListener('click', function () {
+            const textarea = document.getElementById('textarea')
+            const textareaValue = textarea.value
+
+            const p = document.createElement('p')
+
+            p.innerText = textareaValue
+            const conteiner = document.getElementById('conteiner')
+
+            conteiner.appendChild(p)
+            textarea.value = ''
+        })
+    </script>
+
+    <script src="./comment.js"></script>
+</body>
+
+</html>
